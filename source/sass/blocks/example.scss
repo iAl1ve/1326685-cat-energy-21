@@ -1,0 +1,176 @@
+.example {
+  background-color: $bg-grey;
+  padding-top: 27px;
+
+  @media (min-width: $tablet) {
+    background-image: linear-gradient(to bottom, $white 576px, $bg-grey 576px);
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 598px;
+    background-image: linear-gradient(to bottom, $white 136px, $bg-grey 136px);
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title slider" "description slider" "list slider" "costs slider";
+    min-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: $desktop;
+  }
+}
+
+.example__title {
+  @include font-set(36px, 1.11, 400);
+  font-family: $font-classic;
+  margin: 0 0 33px 0;
+
+  @media (min-width: $tablet) {
+    @include font-set(60px, 1.28, 400);
+    grid-column: 1 / -1;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-area: title;
+    margin-bottom: 146px;
+  }
+}
+
+.example__description {
+  @include font-set(14px, 1.11, 400);
+  color: $special-dark-grey;
+  margin: 0 0 25px 0;
+
+  @media (min-width: $tablet) {
+    @include font-set(16px, 1.28, 400);
+    grid-column: 1 / -1;
+    margin-bottom: 54px;
+    padding-right: 134px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-area: description;
+    margin-bottom: 69px;
+  }
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    width: 366px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-area: list;
+  }
+}
+
+.example__item {
+  @include center;
+  flex-grow: 1;
+  margin: 0;
+  position: relative;
+  width: 124px;
+  min-height: 56px;
+  border: 1px solid $border-grey-light;
+  border-radius: 4px;
+
+  @media (min-width: $tablet) {
+    min-height: 77px;
+  }
+
+  &:first-child {
+    margin-right: 15px;
+
+    @media (min-width: $tablet) {
+      margin-right: 21px;
+    }
+  }
+
+  &:last-child {
+    margin-left: 15px;
+
+    @media (min-width: $tablet) {
+      margin-left: 21px;
+    }
+  }
+}
+
+.example__term {
+  @include font-set(24px, 1, 400);
+  font-family: $font-classic;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    @include font-set(30px, 1.23, 400);
+  }
+}
+
+.example__text {
+  @include font-set(12px, 1, 400);
+  position: absolute;
+  text-align: center;
+  text-transform: lowercase;
+  color: $special-dark-grey;
+  background-color: $bg-grey;
+  bottom: -16px;
+  margin: 0;
+  width: 80%;
+  padding: 0 15px;
+
+  @media (min-width: $tablet) {
+    @include font-set(14px, 1, 400);
+    background-color: $white;
+    width: 90%;
+    bottom: -6px;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet) {
+    background-color: $bg-grey;
+  }
+}
+
+.example__costs {
+  @include font-set(20px, 1.43, 400);
+  font-family: $font-classic;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    @include font-set(20px, 1, 400);
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    grid-area: costs;
+    text-align: left;
+  }
+}
+
+.example__costs-sum {
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: inline;
+    margin-left: 63px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $desktop) {
+    grid-area: slider;
+  }
+}

@@ -1,0 +1,6 @@
+.btn {
+  @include center;
+  color: $white;
+  background-color: $basic-green;
+  text-transform: uppercase;
+}

@@ -1,0 +1,42 @@
+.contacts {
+  min-height: 114px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    min-height: 201px;
+  }
+}
+
+.contacts__text {
+  @include font-set(16px, 1.12, 400);
+  font-family: $font-classic;
+  text-transform: uppercase;
+  margin: 0;
+  width: 50%;
+
+  @media (min-width: $tablet) {
+    @include font-set(20px, 1.05, 400);
+  }
+}
+
+.contacts__address {
+  @include font-set(11px, 1.43, 400);
+  color: $special-dark-grey;
+  font-style: normal;
+  width: 50%;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+  }
+}
+
+.contacts__address-сity {
+  display: block;
+
+  @media (min-width: $tablet) {
+    margin-top: 10px;
+  }
+}

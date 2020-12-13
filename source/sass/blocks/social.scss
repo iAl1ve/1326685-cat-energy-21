@@ -1,0 +1,24 @@
+.social {
+  @include center;
+  width: 100%;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet) {
+    border: none;
+    width: auto;
+  }
+}
+
+.social__list {
+  @include center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  min-height: 63px;
+
+  @media (min-width: $tablet) {
+    min-height: 33px;
+  }
+}

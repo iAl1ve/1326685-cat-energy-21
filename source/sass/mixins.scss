@@ -1,0 +1,17 @@
+@mixin list-style-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font-set($size, $line-height, $weight: null) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

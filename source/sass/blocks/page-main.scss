@@ -1,0 +1,27 @@
+.page-main__title {
+  @include font-set(36px, 1, 400);
+  font-family: $font-classic;
+
+  @media (min-width: $tablet) {
+    @include font-set(60px, 1, 400);
+  }
+}
+
+.page-main__text {
+  @include font-set(14px, 1.28, 400);
+  font-family: $font-classic;
+  text-transform: uppercase;
+  margin-top: 37px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet) {
+    @include font-set(20px, 1.5, 400);
+    margin-top: 54px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 56px;
+    margin-bottom: 66px;
+  }
+}

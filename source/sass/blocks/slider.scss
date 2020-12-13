@@ -1,0 +1,11 @@
+.slider__btn {
+  @include font-set(16px, 1.25, 400);
+  font-family: $font-classic;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    @include font-set(20px, 1.48, 400);
+  }
+}

@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+/* Глобальные стили */
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "global.scss";
+
+/* Блоки */
+@import "blocks/page.scss";
+@import "blocks/container.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/btn.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/page-main.scss";
+@import "blocks/service.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";

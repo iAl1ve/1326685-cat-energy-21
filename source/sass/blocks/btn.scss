@@ -1,6 +1,10 @@
 .btn {
   @include center;
+  @include font-set(16px, 1.25, 400);
+  font-family: $font-classic;
   color: $white;
   background-color: $basic-green;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }

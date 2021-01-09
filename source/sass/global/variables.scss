@@ -6,6 +6,7 @@ $basic-green: #68b738;
 $basic-grey: #f2f2f2;
 $border-grey: #d9d9d9;
 $border-grey-light: #cdcdcd;
+$border-grey-form: #e7e7e7;
 $line-grey: #e6e6e6;
 $special-dark-grey: #444444;
 $special-grey: #222222;
@@ -21,6 +22,12 @@ $font-additional: "Arial", sans-serif;
 
 $opacity-hover-60: 0.6;
 $opacity-active-30: 0.3;
+
+/* Отступы для различных экранов */
+
+$indent-mobile: 20px;
+$indent-tablet: 30px;
+$indent-desktop: 110px;
 
 /* Размеры экрана */
 

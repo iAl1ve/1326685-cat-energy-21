@@ -8,6 +8,14 @@
   @media (min-width: $tablet) {
     min-height: 201px;
   }
+
+  &--grey {
+    background-color: $basic-grey;
+
+    @media (min-width: $desktop) {
+      border-bottom: 1px solid $white;
+    }
+  }
 }
 
 .contacts__text {

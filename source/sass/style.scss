@@ -1,13 +1,13 @@
 /* Глобальные стили */
-@import "variables.scss";
-@import "mixins.scss";
-@import "fonts.scss";
-@import "global.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/common.scss";
+@import "global/visually-hidden.scss";
+@import "global/container.scss";
 
 /* Блоки */
 @import "blocks/page.scss";
-@import "blocks/container.scss";
-@import "blocks/visually-hidden.scss";
 @import "blocks/btn.scss";
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
@@ -17,6 +17,7 @@
 @import "blocks/example.scss";
 @import "blocks/slider.scss";
 @import "blocks/contacts.scss";
+@import "blocks/form.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
